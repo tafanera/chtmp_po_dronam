@@ -6,7 +6,7 @@ sed -i 's|arg name="length" default="0.22"|arg name="length" default="0.33"|g' /
 sed -i 's|arg name="map" default="map.txt"|arg name="map" default="guap.txt"|g' /home/clover/catkin_ws/src/clover/clover/launch/aruco.launch
 sed -i 's|arg name="aruco" default="false"|arg name="aruco" default="true"|g' /home/clover/catkin_ws/src/clover/clover/launch/clover.launch
 
-rosrun aruco_pose genmap.py 0.33 3 4 1 1 0 -o guap.txt
+rosrun aruco_pose genmap.py 0.33 4 4 1 1 0 -o guap.txt
 
 find ./ -name 'guap.txt'
 
